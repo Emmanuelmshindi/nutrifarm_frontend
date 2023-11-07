@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  box-shadow: 0 1px 3px -2px black;
+  border: 30px red;
+  background-color: white;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 150px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: grey;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: #001a14;
+}
+
+.nav-login-notifications img {
+  width: 30px;
+}
+.nav-login-notifications {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-login-notifications button {
+  width: 157px;
+  height: 35px;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 75px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background: #001a14;
+  cursor: pointer;
+}
+.nav-login-notifications button:active {
+  outline: auto;
+  border: 5px solid #001a14;
+}
+.notif-count {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 12px;
+  background: red;
+  color: white;
+}

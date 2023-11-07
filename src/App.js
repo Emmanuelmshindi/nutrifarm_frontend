@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar/NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
 
-function App() {
+import { Experts } from "./Pages/Experts";
+import { Nutriplans } from "./Pages/Nutriplans";
+import { NutriplansDetail } from "./Pages/NutriplansDetail";
+import { LogInSignUp } from "./Pages/LogInSignUp";
+import { Discussions } from "./Pages/Discussions";
+import { Home } from "./Pages/Home";
+import { Footer } from "./components/Footer/Footer";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/experts" element={<Experts />} />
+          <Route path="/nutriplans" element={<Nutriplans />} />
+          <Route path=":nutriplansId" element={Nutriplans} />
+          <Route />
+          <Route path="/plan_details" element={<NutriplansDetail />} />
+          <Route path="/loginsignup" element={<LogInSignUp />} />
+          <Route path="/discussions" element={<Discussions />} />
+          <Route path="/login" element={<LogInSignUp />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
