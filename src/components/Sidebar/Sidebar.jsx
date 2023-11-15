@@ -4,7 +4,7 @@ import { CgProfile } from "react-icons/cg";
 import { IoIosStats } from "react-icons/io";
 import { BiCalendar } from "react-icons/bi";
 import { GoTrophy } from "react-icons/go";
-import { BiLogOut } from "react-icons/bi";
+// import { BiLogOut } from "react-icons/bi";
 import { BiFoodMenu } from "react-icons/bi";
 export const Sidebar = () => {
   return (
@@ -40,12 +40,12 @@ export const Sidebar = () => {
             <span>Rewards</span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#">
             <BiLogOut />
             <span>Logout</span>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

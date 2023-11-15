@@ -16,7 +16,7 @@ const App = () => {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/experts" element={<Experts />} />
           <Route path="/nutriplans" element={<Nutriplans />} />
           <Route path=":nutriplansId" element={Nutriplans} />

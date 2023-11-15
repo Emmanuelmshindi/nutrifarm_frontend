@@ -8,12 +8,12 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <Link style={{ textDecoration: "none" }} to="/">
-          <img src={logo} alt="" />
-        </Link>
+        {/* <Link style={{ textDecoration: "none" }} to="/"> */}
+        <img src={logo} alt="" />
+        {/* </Link> */}
       </div>
       <ul className="nav-menu">
-        <li
+        {/* <li
           onClick={() => {
             setMenu("home");
           }}
@@ -22,7 +22,7 @@ function NavBar() {
             Home
           </Link>
           {menu === "home" ? <hr /> : <></>}
-        </li>
+        </li> */}
         <li
           onClick={() => {
             setMenu("nutriplans");
@@ -65,9 +65,9 @@ function NavBar() {
       </ul>
 
       <div className="nav-login-notifications">
-        <Link style={{ textDecoration: "none" }} to="/login">
+        {/* <Link style={{ textDecoration: "none" }} to="/login">
           <button>Login</button>
-        </Link>
+        </Link> */}
         <Link
           style={{ textDecoration: "none", color: "black" }}
           to="/discussions"
